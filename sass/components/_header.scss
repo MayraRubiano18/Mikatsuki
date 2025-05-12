@@ -13,4 +13,8 @@
     font-weight: 600;
     font-style: normal;
   }
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+  }
 }

@@ -20,6 +20,20 @@
     top: -40px;
     left: 0;
   }
+
+  @include respond(phone) {
+    flex-direction: column;
+    border: none;
+    margin-top: 20px;
+    &--titulo {
+      font-size: $title-font-size-sm;
+      top: -10px;
+      left: 20px;
+    }
+  }
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 .contenedor-bordeado {

@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.mercancia {
+  flex-direction: row;
+  @include respond(phone) {
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
