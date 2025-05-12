@@ -8,13 +8,24 @@ body {
 
 main {
   padding: 4.75rem;
+
+  @include respond(phone) {
+    padding: 0;
+  }
 }
 
 main > section:not(:first-child) {
   margin-top: $sections-margin;
+
+  @include respond(phone) {
+    margin-top: $sections-margin-sm;
+  }
 }
 
 .texto-principal {
   max-width: 80ch;
   font-size: $default-font-size;
+  @include respond(phone) {
+    font-size: $default-font-size-sm;
+  }
 }

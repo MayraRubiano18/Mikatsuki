@@ -32,14 +32,29 @@ body {
 main {
   padding: 4.75rem;
 }
+@media (max-width: 600px) {
+  main {
+    padding: 0;
+  }
+}
 
 main > section:not(:first-child) {
   margin-top: 40px;
+}
+@media (max-width: 600px) {
+  main > section:not(:first-child) {
+    margin-top: 10px;
+  }
 }
 
 .texto-principal {
   max-width: 80ch;
   font-size: 1.25rem;
+}
+@media (max-width: 600px) {
+  .texto-principal {
+    font-size: 1rem;
+  }
 }
 
 .enlace {
@@ -62,6 +77,23 @@ main > section:not(:first-child) {
   font-size: 1.75rem;
   top: -40px;
   left: 0;
+}
+@media (max-width: 600px) {
+  .seccion-bordeada {
+    flex-direction: column;
+    border: none;
+    margin-top: 20px;
+  }
+  .seccion-bordeada--titulo {
+    font-size: 1.25rem;
+    top: -10px;
+    left: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .seccion-bordeada {
+    flex-direction: column;
+  }
 }
 
 .contenedor-bordeado {
@@ -104,6 +136,12 @@ main > section:not(:first-child) {
   font-weight: 600;
   font-style: normal;
 }
+@media (max-width: 600px) {
+  .encabezado {
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+  }
+}
 
 .footer--redes {
   display: flex;
@@ -145,6 +183,12 @@ main > section:not(:first-child) {
   animation: moveInRight 1s ease-out;
 }
 
+@media (max-width: 600px) {
+  .noticias {
+    flex-direction: column;
+  }
+}
+
 .contacto--imagen img {
   aspect-ratio: 1/1;
   width: 100%;
@@ -153,15 +197,42 @@ main > section:not(:first-child) {
   border: 1px solid #4a5b8c;
   padding: 20px;
 }
+@media (max-width: 600px) {
+  .contacto {
+    padding-top: 10px;
+    flex-direction: column-reverse;
+  }
+}
 
 .seccion-servicios {
   border: 1px solid #4a5b8c;
   padding: 20px;
 }
+@media (max-width: 600px) {
+  .seccion-servicios {
+    border: none;
+  }
+}
 .seccion-servicios .doblaje--demo {
   aspect-ratio: 16/9;
   width: 100%;
   flex-basis: 500px;
+}
+@media (max-width: 600px) {
+  .seccion-servicios .doblaje {
+    flex-direction: column;
+  }
+  .seccion-servicios .doblaje--demo {
+    flex-basis: 300px;
+  }
+}
+@media (max-width: 900px) {
+  .seccion-servicios .doblaje {
+    flex-direction: column;
+  }
+  .seccion-servicios .doblaje--demo {
+    flex-basis: 400px;
+  }
 }
 .seccion-servicios .locucion--info :last-child {
   margin-left: auto;
@@ -176,4 +247,26 @@ main > section:not(:first-child) {
   aspect-ratio: 12/16;
   width: 100%;
   max-width: 350px;
+}
+@media (max-width: 600px) {
+  .seccion-servicios .locucion {
+    flex-direction: column;
+  }
+  .seccion-servicios .locucion--audio {
+    width: 100%;
+  }
+  .seccion-servicios .locucion--imagen {
+    max-width: 300px;
+  }
+}
+
+.mercancia {
+  flex-direction: row;
+}
+@media (max-width: 600px) {
+  .mercancia {
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

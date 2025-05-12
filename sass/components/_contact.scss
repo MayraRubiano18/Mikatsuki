@@ -11,4 +11,8 @@
 
     padding: 20px;
   }
+  @include respond(phone) {
+    padding-top: 10px;
+    flex-direction: column-reverse;
+  }
 }

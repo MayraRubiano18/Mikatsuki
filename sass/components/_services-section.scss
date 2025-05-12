@@ -4,12 +4,27 @@
   @include border;
 
   padding: 20px;
+  @include respond(phone) {
+    border: none;
+  }
 
   .doblaje {
     &--demo {
       aspect-ratio: 16 / 9;
       width: 100%;
       flex-basis: 500px;
+    }
+    @include respond(phone) {
+      flex-direction: column;
+      &--demo {
+        flex-basis: 300px;
+      }
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+      &--demo {
+        flex-basis: 400px;
+      }
     }
   }
 
@@ -29,6 +44,16 @@
       aspect-ratio: 12 / 16;
       width: 100%;
       max-width: 350px;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      &--audio {
+        width: 100%;
+      }
+      &--imagen {
+        max-width: 300px;
+      }
     }
   }
 }
