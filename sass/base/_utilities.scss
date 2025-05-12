@@ -25,3 +25,12 @@
 .contenedor-bordeado {
   @include roundBorder;
 }
+
+.imagen--animated {
+  &__right {
+    animation: moveInRight 1s ease-out;
+  }
+  &__left {
+    animation: moveInLeft 1s ease-out;
+  }
+}

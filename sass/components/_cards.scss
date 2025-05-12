@@ -1,11 +1,21 @@
+@use '../abstracts' as *;
+
 .cards__ancho {
   width: 18rem;
 }
 
 .noticia {
   padding: 0;
-  img {
+  &--imagen {
     width: 100%;
     object-fit: cover;
+    box-shadow: 0 0.9375rem 2.5rem rgba($color-black, 0.4);
+    transition: all 0.2s;
+
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.05);
+      box-shadow: 0 1.5rem 2.5rem rgba($color-black, 0.5);
+    }
   }
 }
