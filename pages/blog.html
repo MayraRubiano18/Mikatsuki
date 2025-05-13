@@ -11,7 +11,13 @@
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 
-<body>
+<body><svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="chevron-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+      </path>
+    </symbol>
+  </svg>
   <header class="encabezado">
     <!--Para encabezados-->
     <h1 class="encabezado--titulo">MIKATSUKI</h1>
@@ -44,16 +50,108 @@
     </nav>
   </header>
   <main>
-    <!--para el contenido especifico-->
-    <section>
-      <!--dividir por temas el contenido especifico de un archivo-->
-
+    <section class="blog-intro | container">
+      <h2>¡Bienvenidos a mi Blog!💜</h2>
+      <p class="texto-principal">
+        En esta página encontrarás contenido dedicado al anime, manga y toda la riqueza de la cultura asiática. Descubre
+        curiosidades, recomendaciones, y mucho más del fascinante mundo que nos conecta con Japón, Corea, China y otros
+        rincones del continente asiático.
+      </p>
     </section>
-    <section>
-      <article>
-        <!--anidar estructuras de codigo que tiendan a repetirse en un archivo ej:grilla de productos-->
-      </article>
-
+    <!--para el contenido especifico-->
+    <section class="container">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <!-- Articulo 1 -->
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static"> <strong
+                class="d-inline-block mb-2 text-primary-emphasis">Anime</strong>
+              <h3 class="mb-0">Studio Ghibli anuncia su primera serie animada para streaming</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">Después de décadas centrado exclusivamente en películas, Studio Ghibli
+                sorprende a los fans con el anuncio de “El Jardín de la Niebla”, una serie original que se estrenará en
+                exclusiva por streaming. La historia seguirá a una niña capaz de hablar con los espíritus del bosque, en
+                un formato episódico lleno de magia y nostalgia.</p> <a href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link">
+                Continuar leyendo
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#chevron-right"></use>
+                </svg> </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" src="../assets/img/ghibli-new.png" width="200" />
+            </div>
+          </div>
+        </div>
+        <!-- Articulo 2 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static"> <strong
+                class="d-inline-block mb-2 text-info-emphasis">Manga</strong>
+              <h3 class="mb-0">Shonen Jump lanza nuevo manga inspirado en la IA y el arte digital</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">
+                El nuevo manga titulado “Neurocanvas” promete convertirse en un éxito entre los fans de la ciencia
+                ficción. Ambientado en un futuro donde artistas digitales compiten en duelos creativos controlando
+                inteligencias artificiales, este título explora los límites de la creatividad humana en la era de la
+                tecnología.
+              </p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continuar leyendo
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#chevron-right"></use>
+                </svg> </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" src="../assets/img/shonen-new.png" width="200" />
+            </div>
+          </div>
+        </div>
+        <!-- Articulo 3 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static"> <strong
+                class="d-inline-block mb-2 text-primary-emphasis">Anime</strong>
+              <h3 class="mb-0">¡Naruto regresa con una nueva saga centrada en los Hokages del pasado!</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">
+                La franquicia de Naruto revive con una mini serie titulada <strong>"Hokage Gaiden"</strong>, que
+                explorará las historias
+                no contadas de los primeros cinco Hokages. Desde batallas épicas hasta decisiones que marcaron la
+                historia de la aldea, esta precuela promete emociones fuertes y nuevos secretos del universo ninja.
+              </p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continuar leyendo
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#chevron-right"></use>
+                </svg> </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" src="../assets/img/naruto-new.png" width="200" />
+            </div>
+          </div>
+        </div>
+        <!-- Articulo 4 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static"> <strong
+                class="d-inline-block mb-2 text-primary-emphasis">Anime</strong>
+              <h3 class="mb-0">Se anuncia película crossover entre Chainsaw Man y Jujutsu Kaisen</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">
+                MAPPA Studios enloquece al fandom con el anuncio de “Cursed Chains: Blood Pact”, una película crossover
+                donde Denji y Yuji deben unir fuerzas para enfrentar a una maldición ancestral que amenaza con destruir
+                ambas líneas temporales. Una fusión explosiva de acción, oscuridad y humor irreverente.
+              </p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continuar leyendo
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#chevron-right"></use>
+                </svg> </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" src="../assets/img/jujutsu-kaisen-new.png" width="200" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">

@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+.blog-intro {
+  position: relative;
+  &::after {
+    content: '';
+    background-color: $color-secondary;
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+  }
+  @include respond(phone) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    &::after {
+      bottom: -10px;
+    }
+  }
+}
